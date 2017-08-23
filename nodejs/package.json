@@ -1,0 +1,16 @@
+{
+  "name": "tcp-gateway",
+  "version": "1.0.0",
+  "description": "the gateway connect to server and client",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "agent",
+    "tcp",
+    "gateway"
+  ],
+  "author": "limenghua",
+  "license": "ISC"
+}
