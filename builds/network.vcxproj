@@ -81,37 +81,30 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="buffer_queue.h" />
-    <ClInclude Include="IConnection.h" />
-    <ClInclude Include="PackageParser.h" />
-    <ClInclude Include="ProxyClient.h" />
-    <ClInclude Include="shared_const_buffer.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="TcpClient.h" />
-    <ClInclude Include="TcpConnection.h" />
-    <ClInclude Include="TcpServer.h" />
+    <ClCompile Include="..\src\network\buffer_queue.cpp" />
+    <ClCompile Include="..\src\network\dllmain.cpp" />
+    <ClCompile Include="..\src\network\network.cpp" />
+    <ClCompile Include="..\src\network\PackageParser.cpp" />
+    <ClCompile Include="..\src\network\ProxyClient.cpp" />
+    <ClCompile Include="..\src\network\stdafx.cpp" />
+    <ClCompile Include="..\src\network\TcpClient.cpp" />
+    <ClCompile Include="..\src\network\TcpConnection.cpp" />
+    <ClCompile Include="..\src\network\TcpServer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="buffer_queue.cpp" />
-    <ClCompile Include="dllmain.cpp">
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="network.cpp" />
-    <ClCompile Include="PackageParser.cpp" />
-    <ClCompile Include="ProxyClient.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="TcpClient.cpp" />
-    <ClCompile Include="TcpConnection.cpp" />
-    <ClCompile Include="TcpServer.cpp" />
+    <ClInclude Include="..\src\network\buffer_queue.h" />
+    <ClInclude Include="..\src\network\IConnection.h" />
+    <ClInclude Include="..\src\network\PackageParser.h" />
+    <ClInclude Include="..\src\network\ProxyClient.h" />
+    <ClInclude Include="..\src\network\shared_const_buffer.h" />
+    <ClInclude Include="..\src\network\stdafx.h" />
+    <ClInclude Include="..\src\network\targetver.h" />
+    <ClInclude Include="..\src\network\TcpClient.h" />
+    <ClInclude Include="..\src\network\TcpConnection.h" />
+    <ClInclude Include="..\src\network\TcpServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\network\network.vcxproj.user" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
