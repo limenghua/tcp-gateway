@@ -12,5 +12,9 @@
     "gateway"
   ],
   "author": "limenghua",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.5.0",
+    "should": "^11.2.1"
+  }
 }
