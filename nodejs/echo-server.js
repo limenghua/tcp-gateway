@@ -7,6 +7,8 @@ function createServer(port) {
     server.on('connection', (socket) => {
         socket.pipe(socket);
     });
+
+    server.on('error',(err)=>{console.log("err:",err);});
 }
 
 exports.createServer = createServer;
